@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<meta name="format-detection" content="telephone=no"> 
+
+	<title>ShopStyle Fluid Hybrid Responsive Email</title>
+	<!--[if (gte mso 9)|(IE)]>
+	    <style type="text/css">
+	        table {border-collapse: collapse;}
+	    </style>
+	    <![endif]-->
+
+	<!-- STYLING -->
+	<style type="text/css"> 
+
+	/* Basics */
+	body {
+		/*important: help w/alignment issue on Android KitKat */
+	    margin: 0 !important;
+	    padding: 0;
+	    /*avoid background colour glitches in Outlook or Lotus Notes.*/
+	    background-color: #ffffff;
+	}
+	table {
+	    border-spacing: 0;
+	    font-family: sans-serif;
+	    color: #333333;
+	}
+	td {
+	    padding: 0;
+	}
+	img {
+	    border: 0;
+	}
+	/* zero some unwanted padding in Android 4.4’s native mail client*/
+	div[style*="margin: 16px 0"] { 
+	    margin:0 !important;
+	}
+	/*stop text resizing on Windows Phones and iOS*/
+	.wrapper {
+	    width: 100%;
+	    /*ensure  centered content will be centered in Yahoo mail*/
+	    table-layout: fixed; 
+	    -webkit-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	}
+	/*contain everything in Apple Mail 6, Outlook 2011, yahoo*/
+	.webkit {
+	    max-width: 600px;
+	    margin: 0 auto;
+	}
+	.outer {
+	Margin: 0 auto;
+	    width: 95%;
+	    max-width: 600px;
+	}
+	.headline-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+	}
+	.links {
+		background-color: red;
+		text-align: center;
+	}
+	</style>
+	<!-- END STYLING -->
+</head>
+<!-- Body tag tends to get stripped away in webmail clients -->
+<body>
+    <center class="wrapper">
+        <div class="webkit">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+            <td>
+            <![endif]-->
+            <table class="outer" align="center">
+            <tr>
+            <td class="headline-image" align="center">
+            	<img src="img/headline-logo.png" width="350" alt="Shopstyle Logo" />
+            </td>
+            </tr>
+            <tr>
+            <td class="links">
+                    <table width="100%">
+                        <tr>
+                            <td class="inner contents">
+                                <p class="h1">Lorem</p>
+                            </td>
+                            <td class="inner contents">
+                                <p class="h1">Lorem</p>
+                            </td>
+                            <td class="inner contents">
+                                <p class="h1">Lorem</p>
+                            </td>
+                            <td class="inner contents">
+                                <p class="h1">Lorem</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+</body>
+</html>
