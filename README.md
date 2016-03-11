@@ -9,9 +9,9 @@ This small project demonstrates my ability to:
  * maintain responsiveness across all mail clients
  * demonstrate expertise of email best practices
  
- To deploy locally:
-  * clone repo locally
-  * navigate to directory where file has been saved
-  * open index.html in browser
+To deploy locally:
+ * clone repo locally
+ * navigate to directory where file has been saved
+ * open index.html in browser
   
 To view final product online visit: 
