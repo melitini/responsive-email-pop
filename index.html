@@ -55,19 +55,91 @@
 	    margin: 0 auto;
 	}
 	.outer {
-	Margin: 0 auto;
+		Margin: 0 auto;
 	    width: 95%;
 	    max-width: 600px;
 	}
-	.headline-image img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    padding-bottom: 10px;
+	.header-image img {
+    	width: 100%;
+	    max-width: 300px;
+	    height: auto;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	.inner {
+	padding: 10px;
+	}
+	p {
+	    Margin: 0;
+	}
+	a {
+	    color: #ee6a56;
+	    text-decoration: underline;
+	}
+	/* set h1-h5 as classes because Outlook.com has styles that override styling.*/
+	.h1 {
+	    font-size: 21px;
+	    font-weight: bold;
+	    Margin-bottom: 18px;
+	}
+	.h2 {
+	    font-size: 18px;
+	    font-weight: bold;
+	    Margin-bottom: 12px;
+	}
+	 
+	/* One column layout */
+	.one-column .contents {
+	    text-align: left;
+	}
+	.one-column p {
+	    font-size: 14px;
+	    Margin-bottom: 10px;
 	}
 	.links {
 		text-align: center;
 		border-top: solid 1px gray;
+	}
+	.headline-image img {
+		width: 100%;
+    	max-width: 600px;
+    	height: auto;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+
+	}
+	.subheader-text h3 {
+		color: #8c8c8c;
+	}
+
+	/*Two column layout*/
+	.two-column {
+		text-align: center;
+	    font-size: 0;
+	}
+	.two-column .column {
+		width: 100%;
+	    max-width: 280px;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+	.contents {
+		width: 100%;
+	}
+	.two-column .contents {
+		font-size: 14px;
+	    text-align: left;
+	}
+	.two-column img {
+	    width: 100%;
+	    max-width: 280px;
+	    height: auto;
+	}
+	.two-column .text {
+	    padding-top: 10px;
+	}
+	.tall img{
+		min-height: 350px;
 	}
 	</style>
 	<!-- END STYLING -->
@@ -82,34 +154,130 @@
             <td>
             <![endif]-->
             <table class="outer" align="center">
-            <tr>
-            <td class="headline-image" align="center" >
-            	<img src="img/headline-logo.png" width="350" alt="Shopstyle Logo" />
-            </td>
-            </tr>
-            <tr> 
-            <td class="links" align="center">
-                    <table width="100%" align="center">
-                        <tr>
-                            <td class="inner contents">
-                                <p class="h1">Lorem</p>
-                            </td>
-                            <td class="inner contents">
-                                <p class="h1">WOMEN</p>
-                            </td>
-                            <td class="inner contents">
-                                <p class="h1">MEN</p>
-                            </td>
-                            <td class="inner contents">
-                                <p class="h1">KIDS</p>
-                            </td>
-                            <td class="inner contents">
-                                <p class="h1">HOME</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+	            <!-- First Row -->
+	            <tr>
+	            <td class="header-image" align="center" >
+	            	<img src="img/headline-logo.png" width="300" alt="Shopstyle Logo" />
+	            </td>
+	            </tr>
+	            <!-- Second Row -->
+	            <tr> 
+	            <td class="links" align="center">
+	                <table width="100%" align="center">
+	                    <tr>
+	                    <td class="inner links">
+	                        <p class="h3">Lorem</p>
+	                    </td>
+	                    <td class="inner links">
+	                        <p class="h3">WOMEN</p>
+	                    </td>
+	                    <td class="inner links">
+	                        <p class="h3">MEN</p>
+	                    </td>
+	                    <td class="inner links">
+	                        <p class="h3">KIDS</p>
+	                    </td>
+	                    <td class="inner links">
+	                        <p class="h3">HOME</p>
+	                    </td>
+	                    </tr>
+	                </table>
+	            </td>
+	            </tr>
+	            <!-- Third Row -->
+	            <tr>
+	            <td class="headline-image" align="center" >
+	            	<img src="img/rain-01.png" width="600" alt="Rain Ad" />
+	            </td>
+	            </tr>
+	            <!-- Fourth Row -->
+	            <tr>
+	            <td class="subheader-text" align="center" >
+	            	<h3>GET IT TODAY</h3>
+	            </td>
+	            </tr>
+	            <!-- Fifth Row ( Double Column Layout)-->
+	            <tr>
+	            <td class="two-column">
+	                    <!--[if (gte mso 9)|(IE)]>
+	                    <table width="100%">
+	                    <tr>
+	                    <td width="50%" valign="top">
+	                    <![endif]-->
+	                    <div class="column">
+		                    <table width="100%">
+	                            <tr>
+	                            <td class="inner">
+	                            	<table class="contents">
+	                            	    <tr>
+                        	            <td class="tall">
+                	                    	<img src="img/wool.jpg" width="280" alt="Anorak Coat" />
+                        	            </td>
+	                            	    </tr>
+	                            	    <tr>
+                        	            <td class="text">
+                        	                    Maecenas sed 
+                        	            </td>
+	                            	    </tr>
+	                            	    <tr>
+                        	            <td class="high">
+                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+                        	            </td>
+	                            	    </tr>
+
+	                            	    <tr>
+                        	            <td class="text">
+                        	                    Class aptent  
+                        	            </td>
+	                            	    </tr>
+	                            	</table>
+	                            </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    <!--[if (gte mso 9)|(IE)]>
+	                    </td><td width="50%" valign="top">
+	                    <![endif]-->
+	                    <div class="column">
+		                    <table width="100%">
+	                            <tr>
+	                            <td class="inner">
+	                                <table class="contents">
+	                            	    <tr>
+                        	            <td class="high">
+                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+                        	            </td>
+	                            	    </tr>
+
+	                            	    <tr>
+                        	            <td class="text">
+                        	                    Class aptent  
+                        	            </td>
+	                            	    </tr>
+	                            	    <tr>
+                        	            <td class="high">
+                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+                        	            </td>
+	                            	    </tr>
+
+	                            	    <tr>
+                        	            <td class="text">
+                        	                    Class aptent  
+                        	            </td>
+	                            	    </tr>
+	                            	</table>
+	                            </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    <!--[if (gte mso 9)|(IE)]>
+	                    </td>
+	                    </tr>
+	                    </table>
+	                    <![endif]-->
+	                </td>
+	            </tr>
+            
             </table>
             <!--[if (gte mso 9)|(IE)]>
             </td>
