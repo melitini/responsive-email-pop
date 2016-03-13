@@ -5,7 +5,7 @@
     <!--[if !mso]><!-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no"> 
 
 	<title>ShopStyle Fluid Hybrid Responsive Email</title>
@@ -26,16 +26,29 @@
 	    /*avoid background colour glitches in Outlook or Lotus Notes.*/
 	    background-color: #ffffff;
 	}
+	p {
+	    Margin: 0;
+	}
+	a {
+	    color: #ee6a56;
+	    text-decoration: underline;
+	}
 	table {
 	    border-spacing: 0;
 	    font-family: sans-serif;
-	    color: #333333;
+	}
+	tr {
+		border: none;
 	}
 	td {
 	    padding: 0;
 	}
 	img {
 	    border: 0;
+	}
+	ul { 
+		margin: 0; 
+		padding: 0; 
 	}
 	/* zero some unwanted padding in Android 4.4’s native mail client*/
 	div[style*="margin: 16px 0"] { 
@@ -54,6 +67,8 @@
 	    max-width: 600px;
 	    margin: 0 auto;
 	}
+
+	/* ------ Custom ----------*/
 	.outer {
 		Margin: 0 auto;
 	    width: 95%;
@@ -63,18 +78,26 @@
     	width: 100%;
 	    max-width: 300px;
 	    height: auto;
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+	    padding-top: 40px;
+	    padding-bottom: 30px;
 	}
-	.inner {
-	padding: 10px;
+	.inner-left {
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
-	p {
-	    Margin: 0;
+	.inner-right {
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
-	a {
-	    color: #ee6a56;
-	    text-decoration: underline;
+	.text {
+		color: gray;
+		font-size: 12px;
+		text-align: center;
+		
+	}
+	
 	}
 	/* set h1-h5 as classes because Outlook.com has styles that override styling.*/
 	.h1 {
@@ -88,7 +111,7 @@
 	    Margin-bottom: 12px;
 	}
 	 
-	/* One column layout */
+	/* ------One column layout---- */
 	.one-column .contents {
 	    text-align: left;
 	}
@@ -99,6 +122,7 @@
 	.links {
 		text-align: center;
 		border-top: solid 1px gray;
+		padding-top: 10px;
 	}
 	.headline-image img {
 		width: 100%;
@@ -112,7 +136,7 @@
 		color: #8c8c8c;
 	}
 
-	/*Two column layout*/
+	/*-----Two column layout----*/
 	.two-column {
 		text-align: center;
 	    font-size: 0;
@@ -132,14 +156,49 @@
 	}
 	.two-column img {
 	    width: 100%;
-	    max-width: 280px;
+	    max-width: 300px;
 	    height: auto;
 	}
 	.two-column .text {
 	    padding-top: 10px;
 	}
 	.tall img{
-		min-height: 350px;
+		height: 566px;
+	}
+	/*-------- Space --------*/
+	.space {
+		padding: 20px;
+	}
+	/*-------- Social --------*/
+	.social {
+		padding-top: 50px;
+	}
+	.social-two-col {
+		margin-top: 20px;
+		text-align: center;
+	    font-size: 0;
+	    border-top: solid 2px gray;
+	}
+	.social-two-col .column {
+		width: 100%;
+	    max-width: 280px;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+	.social-two-col .contents {
+		font-size: 14px;
+	    text-align: left;
+	}
+	.social-two-col img {
+	    width: 100%;
+	    max-width: 130px;
+	    height: auto;
+	}
+	.social-two-col .text {
+	    padding-top: 10px;
+	}
+	.social-two-col ul {
+
 	}
 	</style>
 	<!-- END STYLING -->
@@ -165,19 +224,19 @@
 	            <td class="links" align="center">
 	                <table width="100%" align="center">
 	                    <tr>
-	                    <td class="inner links">
-	                        <p class="h3">Lorem</p>
+	                    <td>
+	                        <img src="img/mag.png">
 	                    </td>
-	                    <td class="inner links">
+	                    <td>
 	                        <p class="h3">WOMEN</p>
 	                    </td>
-	                    <td class="inner links">
+	                    <td>
 	                        <p class="h3">MEN</p>
 	                    </td>
-	                    <td class="inner links">
+	                    <td>
 	                        <p class="h3">KIDS</p>
 	                    </td>
-	                    <td class="inner links">
+	                    <td>
 	                        <p class="h3">HOME</p>
 	                    </td>
 	                    </tr>
@@ -199,85 +258,148 @@
 	            <!-- Fifth Row ( Double Column Layout)-->
 	            <tr>
 	            <td class="two-column">
-	                    <!--[if (gte mso 9)|(IE)]>
+	                <!--[if (gte mso 9)|(IE)]>
+	                <table width="100%">
+	                <tr>
+	                <td width="50%" valign="top">
+	                <![endif]-->
+	                <div class="column">
 	                    <table width="100%">
-	                    <tr>
-	                    <td width="50%" valign="top">
-	                    <![endif]-->
-	                    <div class="column">
-		                    <table width="100%">
-	                            <tr>
-	                            <td class="inner">
-	                            	<table class="contents">
-	                            	    <tr>
-                        	            <td class="tall">
-                	                    	<img src="img/wool.jpg" width="280" alt="Anorak Coat" />
-                        	            </td>
-	                            	    </tr>
-	                            	    <tr>
-                        	            <td class="text">
-                        	                    Maecenas sed 
-                        	            </td>
-	                            	    </tr>
-	                            	    <tr>
-                        	            <td class="high">
-                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
-                        	            </td>
-	                            	    </tr>
+	                        <tr>
+	                        <td class="inner-left">
+	                        	<table class="contents">
+	                        	    <tr>
+	                	            <td class="tall">
+	        	                    	<img src="img/long-coat.jpg" width="280" height="566" alt="Anorak Coat" />
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="text">
+	                	                    Maecenas sed 
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="high">
+	        	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+	                	            </td>
+	                        	    </tr>
 
-	                            	    <tr>
-                        	            <td class="text">
-                        	                    Class aptent  
-                        	            </td>
-	                            	    </tr>
-	                            	</table>
-	                            </td>
-	                            </tr>
-	                        </table>
-	                    </div>
-	                    <!--[if (gte mso 9)|(IE)]>
-	                    </td><td width="50%" valign="top">
-	                    <![endif]-->
-	                    <div class="column">
-		                    <table width="100%">
-	                            <tr>
-	                            <td class="inner">
-	                                <table class="contents">
-	                            	    <tr>
-                        	            <td class="high">
-                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
-                        	            </td>
-	                            	    </tr>
-
-	                            	    <tr>
-                        	            <td class="text">
-                        	                    Class aptent  
-                        	            </td>
-	                            	    </tr>
-	                            	    <tr>
-                        	            <td class="high">
-                	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
-                        	            </td>
-	                            	    </tr>
-
-	                            	    <tr>
-                        	            <td class="text">
-                        	                    Class aptent  
-                        	            </td>
-	                            	    </tr>
-	                            	</table>
-	                            </td>
-	                            </tr>
-	                        </table>
-	                    </div>
-	                    <!--[if (gte mso 9)|(IE)]>
-	                    </td>
-	                    </tr>
+	                        	    <tr>
+	                	            <td class="text">
+	                	                    Class aptent  
+	                	            </td>
+	                        	    </tr>
+	                        	</table>
+	                        </td>
+	                        </tr>
 	                    </table>
-	                    <![endif]-->
+	                </div>
+	                <!--[if (gte mso 9)|(IE)]>
+	                </td><td width="50%" valign="top">
+	                <![endif]-->
+	                <div class="column">
+	                    <table width="100%">
+	                        <tr>
+	                        <td class="inner-right">
+	                            <table class="contents">
+	                        	    <tr>
+	                	            <td class="high">
+	        	                    	<img src="img/boots.jpg" width="280" alt="Backpack for Rain" />
+	                	            </td>
+	                        	    </tr>
+
+	                        	    <tr>
+	                	            <td class="text">
+	                	                    Class aptent  
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="high">
+	        	                    	<img src="img/anorak.jpg" width="280" alt="Backpack for Rain" />
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="text">
+	                	                    Class aptent  
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="high">
+	        	                    	<img src="img/sweater.jpg" width="280" alt="Backpack for Rain" />
+	                	            </td>
+	                        	    </tr>
+	                        	    <tr>
+	                	            <td class="text">
+	                	                    Class aptent  
+	                	            </td>
+	                        	    </tr>
+
+	                        	</table>
+	                        </td>
+	                        </tr>
+	                    </table>
+	                </div>
+	                <!--[if (gte mso 9)|(IE)]>
 	                </td>
+	                </tr>
+	                </table>
+	                <![endif]-->
+                </td>
 	            </tr>
-            
+	            <tr>
+            	<td class="space">
+            	</td>
+	            </tr>
+	            <!-- Social Buttons -->
+	            <tr class="social">
+	            <td class="social-two-col">
+	            	<!--[if (gte mso 9)|(IE)]>
+	            	<table width="100%">
+	            	<tr>
+	            	<td width="50%" valign="top">
+	            	<![endif]-->
+	            	<div class="column">
+
+		            	<table width="100%">
+		            		<tr>
+		            		<td class="inner-left">
+		            			<table class="contents">
+		            				<tr>
+		            				<td>
+						            	<ul width="100%" style="text-decoration:none">
+						            	  <li style="display:inline;"><img src="img/social/f.png" style="width:30px;max-width30px;"></li>
+						            	  <li style="display:inline;"><img src="img/social/t.png" style="width:30px;max-width30px;"></li>
+						            	  <li style="display:inline;"><img src="img/social/i.png" style="width:30px;max-width30px;"></li>
+						            	  <li style="display:inline;"><img src="img/social/g.png" style="width:30px;max-width30px;"></li>
+						            	  <li style="display:inline;"><img src="img/social/p.png" style="width:30px;max-width30px;"></li>
+						            	</ul>
+					            	</td>
+					            	</tr>
+				            	</table>
+			            	</td>
+			            	</tr>
+		            	</table>
+	            	</div>
+	            	<!--[if (gte mso 9)|(IE)]>
+	            	</td><td width="50%" valign="top">
+	            	<![endif]-->
+	            	<div class="column">
+	            		<table width="100%">
+		            		<tr>
+		            		<td class="inner-right">
+		            			<table class="contents">
+		            				<tr>
+		            				<td align="right">
+						            	<img src="img/social/getapp.png" width="130" alt="Get the shopstyle app link"/>
+					            	</td>
+					            	</tr>
+				            	</table>
+			            	</td>
+			            	</tr>
+		            	</table>
+	            	</div>
+	            </td>
+	            </tr>
             </table>
             <!--[if (gte mso 9)|(IE)]>
             </td>
