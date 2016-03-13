@@ -14,4 +14,4 @@ To deploy locally:
  * navigate to directory where file has been saved
  * open index.html in browser
   
-To view final product online visit: 
+To view final product online visit: http://melitini.github.io/responsive-email-pop
