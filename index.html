@@ -25,13 +25,17 @@
 	    padding: 0;
 	    /*avoid background colour glitches in Outlook or Lotus Notes.*/
 	    background-color: #ffffff;
+	    color: #777777;
+	}
+	.inner {
+		padding: 10px;
 	}
 	p {
 	    Margin: 0;
 	}
 	a {
-	    color: #ee6a56;
-	    text-decoration: underline;
+	    color: inherit;
+	    text-decoration: none;
 	}
 	table {
 	    border-spacing: 0;
@@ -68,10 +72,10 @@
 	    margin: 0 auto;
 	}
 
-	/* ------ Custom ----------*/
+	/* ------ One Column ----------*/
 	.outer {
 		Margin: 0 auto;
-	    width: 100%;
+	    width: 95%;
 	    max-width: 600px;
 	}
 	.header-image img {
@@ -81,24 +85,12 @@
 	    padding-top: 40px;
 	    padding-bottom: 30px;
 	}
-	.inner-left {
-		padding-right: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.inner-right {
-		padding-left: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
 	.text {
 		color: gray;
 		font-size: 12px;
-		text-align: center;
-		
+		text-align: center;	
 	}
 	
-	}
 	/* set h1-h5 as classes because Outlook.com has styles that override styling.*/
 	.h1 {
 	    font-size: 21px;
@@ -143,7 +135,7 @@
 	}
 	.two-column .column {
 		width: 100%;
-	    max-width: 300px;
+	    max-width: 285px;
 	    display: inline-block;
 	    vertical-align: top;
 	}
@@ -165,39 +157,34 @@
 
 	}
 	.tall img{
-		height: 615px;
+		height: 565px;
 	}
-	/*--- Four Column -------*/
-	.four-column {
+	/*--- Three Column -------*/
+	.three-column {
 	    text-align: center;
 	    font-size: 0;
 	    padding-top: 10px;
 	    padding-bottom: 10px;
 	}
-	.four-column .column {
+	.three-column .column {
 	    width: 100%;
-	    max-width: 200px;
+	    max-width: 190px;
 	    display: inline-block;
 	    vertical-align: top;
 	}
-	.four-column .contents {
+	.three-column .contents {
 	    font-size: 14px;
 	    text-align: center;
 	}
-	.four-column img {
+	.three-column img {
 	    width: 100%;
-	    max-width: 200px;
+	    max-width: 180px;
 	    height: auto;
 	}
-	.four-column .text {
+	.three-column .text {
 	    padding-top: 10px;
 	}
-	.pad-left {
-		padding-left: 10px;
-	}
-	.pad-right {
-		padding-right: 10px;
-	}
+
 	/*-------- Space --------*/
 	.space {
 		padding: 20px;
@@ -207,6 +194,8 @@
 		padding-top: 50px;
 	}
 	.social-two-col {
+		padding-top: 10px;
+		padding-bottom: 20px;
 		margin-top: 20px;
 		text-align: center;
 	    font-size: 0;
@@ -214,7 +203,7 @@
 	}
 	.social-two-col .column {
 		width: 100%;
-	    max-width: 300px;
+	    max-width: 285px;
 	    display: inline-block;
 	    vertical-align: top;
 	}
@@ -228,7 +217,7 @@
 	    height: auto;
 	}
 	.social-two-col ul {
-		max-width: 300px
+		max-width: 285px
 
 	}
 	</style>
@@ -256,19 +245,19 @@
 	                <table width="100%" align="center">
 	                    <tr>
 	                    <td>
-	                        <img src="img/mag.png">
+	                        <a href="#"><img src="img/mag.png"></a>
 	                    </td>
 	                    <td>
-	                        <p class="h3">WOMEN</p>
+	                        <a href="#"><p class="h3">WOMEN</p></a>
 	                    </td>
 	                    <td>
-	                        <p class="h3">MEN</p>
+	                        <a href="#"><p class="h3">MEN</p></a>
 	                    </td>
 	                    <td>
-	                        <p class="h3">KIDS</p>
+	                        <a href="#"><p class="h3">KIDS</p></a>
 	                    </td>
 	                    <td>
-	                        <p class="h3">HOME</p>
+	                        <a href="#"><p class="h3">HOME</p></a>
 	                    </td>
 	                    </tr>
 	                </table>
@@ -277,7 +266,9 @@
 	            <!-- Third Row -->
 	            <tr>
 	            <td class="headline-image" align="center" >
-	            	<img src="img/rain-01.png" width="600" alt="Rain Ad" />
+	            	<a href="#">
+	            		<img src="img/rain-01.png" width="600" alt="Rain Ad" />
+	            	</a>
 	            </td>
 	            </tr>
 	            <!-- Fourth Row -->
@@ -297,27 +288,31 @@
 	                <div class="column">
 	                    <table width="100%">
 	                        <tr>
-	                        <td class="inner-left">
+	                        <td class="inner">
 	                        	<table class="contents">
 	                        	    <tr>
 	                	            <td class="tall">
-	        	                    	<img src="img/long-coat.jpg" width="280" height="615" alt="Anorak Coat" />
+	                	            	<a href="#">
+	        	                    		<img src="img/long-coat.jpg" width="280" height="615" alt="Anorak Coat" />
+	        	                    	</a>
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="text">
-	                	                    Maecenas sed 
+	                	                    The Long Coat 
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="high">
-	        	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+	                	            	<a href="#">
+	        	                    		<img src="img/sweater.jpg" width="280" alt="Backpack for Rain" />
+	        	                    	</a>
 	                	            </td>
 	                        	    </tr>
 
 	                        	    <tr>
 	                	            <td class="text">
-	                	                    Class aptent  
+	                	                    The Obvious Sweater 
 	                	            </td>
 	                        	    </tr>
 	                        	</table>
@@ -331,37 +326,43 @@
 	                <div class="column">
 	                    <table width="100%">
 	                        <tr>
-	                        <td class="inner-right">
+	                        <td class="inner">
 	                            <table class="contents">
 	                        	    <tr>
 	                	            <td class="high">
-	        	                    	<img src="img/boots.jpg" width="280" alt="Backpack for Rain" />
+	                	            	<a href="#">
+	        	                    		<img src="img/boots.jpg" width="280" alt="Backpack for Rain" />
+	        	                    	</a>
 	                	            </td>
 	                        	    </tr>
 
 	                        	    <tr>
 	                	            <td class="text">
-	                	                    Class aptent  
+	                	                    The OK Boots 
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="high">
-	        	                    	<img src="img/anorak.jpg" width="280" alt="Backpack for Rain" />
+		                	            <a href="#">
+		        	                    	<img src="img/anorak.jpg" width="280" alt="Backpack for Rain" />
+		        	                    </a>
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="text">
-	                	                    Class aptent  
+	                	                    The Anorak Thing  
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="high">
-	        	                    	<img src="img/sweater.jpg" width="280" alt="Backpack for Rain" />
+		                	            <a href="#">
+		        	                    	<img src="img/backpack.jpg" width="280" alt="Backpack for Rain" />
+		        	                    </a>
 	                	            </td>
 	                        	    </tr>
 	                        	    <tr>
 	                	            <td class="text">
-	                	                    Class aptent  
+	                	                    The Backpack  
 	                	            </td>
 	                        	    </tr>
 
@@ -380,88 +381,96 @@
 	            <!-- One column, large image -->
 	            <tr>
 	            <td class="headline-image" align="center" >
+	            	<a href="#">
 	            	<img src="img/big.jpg" width="600" alt="Large Sweater and Model Image" />
+	            	</a>
 	            </td>
 	            </tr>
 	            <tr>
 	            <td class="text" align="center" >
-	            	Something Really Awesome
+	            	The Gorgeous Model
 	            </td>
 	            </tr>
-	            <!-- Four Columns -->
+	            <!-- Three Columns -->
 	            <tr>
-	            <td class="four-column">
+	            <td class="three-column">
 	                <!--[if (gte mso 9)|(IE)]>
-	                <table width="100%">
-	                <tr>
-	                <td width="150" valign="top">
-	                <![endif]-->
+                    <table width="100%">
+                    <tr>
+                    <td width="200" valign="top">
+                    <![endif]-->
+	               <div class="column">
+	                   <table width="100%">
+	                       <tr>
+                           <td class="inner">
+                               <table class="contents">
+                                   <tr>
+                                   <td>
+                                   	   <a href="#">
+                                       <img src="img/beanie.jpg" width="160" alt=""/>
+                                       </a>
+                                   </td>
+                               		</tr>
+                               		<tr>
+                                   <td class="text">
+                                       The Beanie
+                                   </td>
+                                   </tr>
+                               </table>
+                           </td>
+	                       </tr>
+	                   </table>
+	               </div>
+	                <!--[if (gte mso 9)|(IE)]>
+		        	</td><td width="200" valign="top">
+		        	<![endif]-->
 	                <div class="column">
-	                    <table width="100%">
-	                        <tr>
-                            <td class="inner">
-                                <table class="contents">
-                                    <tr>
-                                    <td class="pad-right">
-                                        <img src="img/scarf.jpg" width=120 alt="" />
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                    <td class="text">
-                                        Beige Scarf 
-                                    </td>
-                                    </tr>
-                                </table>
-                            </td>
-	                        </tr>
-	                    </table>
-	                </div>
+	                   <table width="100%">
+	                       <tr>
+                           <td class="inner">
+                               <table class="contents">
+                                   <tr>
+                                   <td>
+                                   	   <a href="#">
+                                       <img src="img/scarf.jpg" width="160" alt="" />
+                                       </a>
+                                   </td>
+                               		</tr>
+                               		<tr>
+                                   <td class="text">
+                                       The Scarf
+                                   </td>
+                                   </tr>
+                               </table>
+                           </td>
+	                       </tr>
+	                   </table>
+	               </div>
 	                <!--[if (gte mso 9)|(IE)]>
 	                </td><td width="150" valign="top">
 	                <![endif]-->
 	                <div class="column">
-	                    <table width="100%">
-	                        <tr>
-                            <td class="inner">
-                                <table class="contents">
-                                    <tr>
-                                    <td>
-                                        <img src="img/beanie.jpg" width="100" alt="" />
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                    <td class="text">
-                                        Beanie Hat 
-                                    </td>
-                                    </tr>
-                                </table>
-                            </td>
-	                        </tr>
-	                    </table>
-	                </div>
-	                <!--[if (gte mso 9)|(IE)]>
-	                </td><td width="150" valign="top">
-	                <![endif]-->
-	                <div class="column">
-	                    <table width="100%">
-	                        <tr>
-                            <td class="inner">
-                                <table class="contents">
-                                    <tr>
-                                    <td class="pad-left">
-                                        <img src="img/belt.jpg" width="120" alt="" />
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                    <td class="text">
-                                        Camel Belt 
-                                    </td>
-                                    </tr>
-                                </table>
-                            </td>
-	                        </tr>
-	                    </table>
-	                </div>
+	                   <table width="100%">
+	                       <tr>
+                           <td class="inner">
+                               <table class="contents">
+                                   <tr>
+                                   <td>
+                                   	   <a href="#">
+                                       <img src="img/belt.jpg" width="160" alt="" />
+                                       </a>
+                                   </td>
+                               		</tr>
+                               		<tr>
+                                   <td class="text">
+                                       The Belt
+                                   </td>
+                                   </tr>
+                               </table>
+                           </td>
+	                       </tr>
+	                   </table>
+	               </div>
 	                <!--[if (gte mso 9)|(IE)]>
 	                </td>
 	                </tr>
@@ -488,16 +497,22 @@
 
 		            	<table width="100%">
 		            		<tr>
-		            		<td class="inner-left">
+		            		<td class="inner">
 		            			<table class="contents">
 		            				<tr>
 		            				<td>
-						            	<ul width="100%" style="text-decoration:none">
-						            	  <li style="display:inline;"><img src="img/social/f.png" style="width:30px;max-width30px;"></li>
-						            	  <li style="display:inline;"><img src="img/social/t.png" style="width:30px;max-width30px;"></li>
-						            	  <li style="display:inline;"><img src="img/social/i.png" style="width:30px;max-width30px;"></li>
-						            	  <li style="display:inline;"><img src="img/social/g.png" style="width:30px;max-width30px;"></li>
-						            	  <li style="display:inline;"><img src="img/social/p.png" style="width:30px;max-width30px;"></li>
+						            	<ul align="center" style="text-decoration:none">
+						            	 	<li style="display:inline;">
+						            	  		<a href="#"><img src="img/social/f.png" style="width:30px;max-width30px;"></a>
+						            	  	</li>
+						            	  	<li style="display:inline;"><a href="#"><img src="img/social/t.png" style="width:30px;max-width30px;"></a>
+						            	  	</li>
+						            	  	<li style="display:inline;"><a href="#"><img src="img/social/i.png" style="width:30px;max-width30px;"></a>
+						            	  	</li>
+						            	  	<li style="display:inline;"><a href="#"><img src="img/social/g.png" style="width:30px;max-width30px;"></a>
+						            	  	</li>
+						            	  	<li style="display:inline;"><a href="#"><img src="img/social/p.png" style="width:30px;max-width30px;"></a>
+						            	  	</li>
 						            	</ul>
 					            	</td>
 					            	</tr>
@@ -512,11 +527,13 @@
 	            	<div class="column">
 	            		<table width="100%">
 		            		<tr>
-		            		<td class="inner-right">
+		            		<td class="inner">
 		            			<table class="contents">
 		            				<tr>
-		            				<td align="right">
+		            				<td align="center">
+		            				<a href="#">
 						            	<img src="img/social/getapp.png" width="130" alt="Get the shopstyle app link"/>
+					            	</a>
 					            	</td>
 					            	</tr>
 				            	</table>
